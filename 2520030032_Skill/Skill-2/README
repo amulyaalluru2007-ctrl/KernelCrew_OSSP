@@ -1,0 +1,65 @@
+Interactive Main Loop
+
+1.Create Main Loop
+Continuously execute the shell operations inside a loop.
+Keep accepting commands until the user chooses to exit.
+
+2.Display Prompt
+Display a prompt to show that the shell is ready for input.
+Use prompts such as $, or Enter a Command.
+Display the prompt before every new command.
+
+3.Read User Input
+Accept the command entered through the keyboard.
+Use the read() system call to capture the input.
+Store the entered characters in an input buffer.
+
+4.Handle Exit Conditions
+Check whether the user has entered the exit command.
+Detect end-of-file or unsuccessful input conditions.
+Terminate the loop when an exit condition is detected.
+
+5.Control Flow
+Follow the sequence: Display Prompt → Read Input → Process Command → Execute → Repeat.
+Return to the prompt after processing each command.
+Stop the flow when the exit condition is satisfied.
+
+6.Testing
+Test the loop using normal commands.
+Test empty input and repeated commands.
+Test the exit command to verify proper termination.
+
+
+
+
+ Keyboard Input and Command Handling
+
+1.Capture Keyboard Input
+Capture characters entered from the keyboard.
+Use the read() system call for keyboard input.
+Store the characters temporarily in a buffer.
+
+2.Handle Backspace
+Detect the Backspace key during input.
+Remove the previously entered character from the buffer.
+Update the displayed input after correction.
+
+3.Process Enter Key
+Detect the Enter key as the end of input.
+When the user presses Enter, the program detects the newline character '\n'.
+This tells the shell that the user has finished entering the current command.
+
+4.Manage Input Buffer
+Store entered characters sequentially in the buffer.
+Maintain the current position while characters are entered or removed.
+Use read() and write() for input and terminal operations.
+
+5.Multi-Character Commands
+Support commands containing multiple characters.
+Handle spaces and command options correctly.
+Examples include ls -l, ls -a, and ls -l -a.
+
+6.User Interaction Testing
+Test normal commands and multi-character commands.
+Test Backspace and Enter key handling.
+Test commands with spaces and different options.
