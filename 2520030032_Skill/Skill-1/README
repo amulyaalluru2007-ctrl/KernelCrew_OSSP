@@ -40,7 +40,6 @@ Run the compiled program using:
 
 
 
-
 What was acheived?
 
 1.Install Linux VM 
@@ -63,7 +62,6 @@ Create a basic Makefile to automate compilation and build the shell project.
 
 7.Pseudo apt install bsh 
 Design the project as a basic shell that can accept and execute commands similar to a Linux shell.
-
 
 
 
