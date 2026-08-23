@@ -1,1 +1,109 @@
+# Question 2 – Part A: Interactive Shell Loop
+
+## Objective
+
+To create a basic interactive shell loop that displays a command prompt, accepts user input, handles exit conditions, and maintains continuous interaction with the user.
+
+## Description
+
+This experiment demonstrates the basic structure of an interactive command-line shell. The shell continuously displays a prompt and waits for the user to enter input.
+
+The input is read and processed, and the program continues accepting input until the user enters an exit command.
+
+## Tasks Performed
+
+* Created the main shell loop.
+* Displayed a command prompt.
+* Read user input.
+* Processed the entered input.
+* Implemented an exit condition.
+* Designed the control flow of the interactive loop.
+* Tested the interactive shell.
+
+## Concepts Covered
+
+* Main Loop
+* Command Prompt
+* User Input
+* String Processing
+* Exit Conditions
+* Control Flow
+* Interactive Shell
+
+## Working
+
+The shell displays a prompt and waits for user input. After receiving the input, it processes the entered text.
+
+If the user enters the exit command, the program terminates. Otherwise, it continues running and accepts the next input.
+
+## Testing
+
+The program can be tested using inputs such as:
+
+* `hello`
+* `ls`
+* `pwd`
+* `exit`
+
+The shell should continue running for normal input and terminate when the exit command is entered.
+
+## Learning Outcome
+
+After completing this experiment, we understand how an interactive shell maintains a continuous loop, displays a prompt, accepts user input, processes commands, and handles termination conditions.
+
+
+
+# Part B: Keyboard Input Handling
+
+## Objective
+
+To capture keyboard input character by character, handle Backspace and Enter keys, manage an input buffer, support multi-character commands, and test user interaction.
+
+## Description
+
+This experiment focuses on handling keyboard input at the character level. Each character entered by the user is captured and processed appropriately.
+
+Special keys such as Backspace and Enter are handled separately to provide interactive command-line behavior.
+
+## Tasks Performed
+
+* Captured keyboard input.
+* Processed individual characters.
+* Handled the Backspace key.
+* Processed the Enter key.
+* Created and managed an input buffer.
+* Supported multi-character commands.
+* Tested interactive user input.
+
+## Concepts Covered
+
+* Keyboard Input
+* Character-by-Character Processing
+* Input Buffer
+* Backspace Handling
+* Enter Key Handling
+* Multi-Character Commands
+* User Interaction
+
+## Working
+
+The program captures characters entered through the keyboard. Normal characters are stored in an input buffer.
+
+When the Backspace key is pressed, the previous character is removed from the buffer. When Enter is pressed, the completed input is processed as a command.
+
+The buffer is then prepared for the next command.
+
+## Testing
+
+The program can be tested by:
+
+* Entering individual characters.
+* Entering multi-character commands.
+* Using Backspace to correct input.
+* Pressing Enter to submit commands.
+* Entering multiple commands consecutively.
+
+## Learning Outcome
+
+After completing this experiment, we understand how keyboard input can be captured character by character, how an input buffer is maintained, and how special keys such as Backspace and Enter can be handled in an interactive shell.
 
