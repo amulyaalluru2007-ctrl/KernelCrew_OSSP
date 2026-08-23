@@ -13,7 +13,6 @@ The Linux kernel performs the requested file operation, such as opening, reading
 After completing the operation, the kernel returns the result and control back to the user space program.
 
 
-
 Analysis of strace cat sample.txt:
 
 The strace utility monitors the interaction between a user program and the Linux kernel.
