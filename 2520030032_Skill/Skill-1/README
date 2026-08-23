@@ -1,1 +1,94 @@
 
+Step 1: Launch PowerShell
+Open PowerShell as Administrator from the Windows Start menu.
+Use the administrator terminal to install and configure WSL.
+
+Step 2: Install WSL
+Enter the following command in PowerShell:
+wsl --install
+
+Step 3: Restart the System
+Restart the computer after WSL installation is completed.
+
+Step 4: Configure Ubuntu
+Open Ubuntu from the Start menu after restarting.
+Wait for the initial setup and enter a Linux username when prompted.
+Enter new UNIX username: amulya
+
+Step 5: Set Linux Password
+Create a password for the newly created Linux user.
+Enter the password again to confirm it.
+New password: ****
+Retype new password: ****
+
+Step 6: Update Ubuntu
+
+Step 7: Install GCC
+sudo apt install gcc
+
+Step 8: Check GCC Installation
+gcc --version
+
+Step 9: Create a C Program
+Create a new C source file using the Nano editor.
+nano prac1.c
+
+Step 10: Compile the Program
+gcc prac1.c -o prac1
+Run the compiled program using:
+./process
+
+
+
+
+What was acheived?
+
+1.Install Linux VM 
+Set up a Linux virtual machine to provide the environment for OS development.
+
+2.Configure GCC 
+Install and configure GCC to compile C programs.
+
+3.Setup Git Repository 
+Create a Git repository to manage and track project files and changes.
+
+4.Create Project Structure 
+Organize source code, headers, Makefile, and other project files into proper directories.
+
+5.Understand Shell Architecture 
+Study how the shell accepts commands, creates processes, and interacts with the Linux kernel.
+
+6.Build Initial Makefile 
+Create a basic Makefile to automate compilation and build the shell project.
+
+7.Pseudo apt install bsh 
+Design the project as a basic shell that can accept and execute commands similar to a Linux shell.
+
+
+
+
+Topics Covered:
+
+1. Process Abstraction
+A process is a program in execution, managed by the OS with its own PID, memory, CPU state, and resources.
+Process abstraction allows multiple programs to run independently and efficiently.
+
+2. fork() System Call
+fork() creates a new child process from a parent process.
+Return value: 0 → child, positive → parent, negative → failure.
+
+3. exec() Family
+The exec() family replaces the current process with a new program without creating a new process.
+Common functions are execl(), execlp(), execv(), execvp(), execle(), and execve().
+
+4. Parent–Child Relationships
+A parent creates a child using fork(), and the child has its own PID and PPID (parent's PID).
+Parent and child can execute independently, and the parent can wait for the child to finish.
+
+5. Process Tree
+A process tree shows the hierarchical relationship between parent and child processes.
+Commands like pstree and ps help view and analyze process hierarchies.
+
+6. System Call Tracing
+System call tracing shows how a program interacts with the Linux kernel.
+strace can monitor calls such as read(), write(), fork(), and execve() for debugging and analysis.
