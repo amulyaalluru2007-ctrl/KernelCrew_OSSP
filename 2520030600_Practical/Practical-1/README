@@ -1,1 +1,84 @@
+1. Linux Command Execution and Hardware Investigation
+Aim
 
+To understand how Linux executes a command entered by a user by creating a child process and using system calls for process creation, program execution, and synchronization.
+
+Concepts Used
+fork() – Creates a child process.
+exec() – Replaces the child process with the requested program.
+wait() – Allows the parent process to wait for the child.
+getpid() – Displays the current process ID.
+getppid() – Displays the parent process ID.
+Working
+
+The user enters a Linux command.
+
+The program then:
+
+Creates a child process using fork().
+The child executes the command using an exec() system call.
+The parent continues separately.
+The parent waits for the child using wait().
+The PID and PPID of the processes are displayed.
+Process Flow
+User enters command
+        ↓
+      fork()
+      ↙   ↘
+ Parent   Child
+   ↓        ↓
+ wait()   exec()
+   ↓        ↓
+   ↓    Linux command
+   ↘      ↙
+   Child completes
+        ↓
+      Parent
+Hardware and OS Investigation
+
+The following Linux commands are used:
+
+uname
+
+Provides information about the Linux kernel, operating system, architecture, and kernel version.
+
+lscpu
+
+Displays CPU-related information such as architecture, cores, threads, and CPU model.
+
+lsblk
+
+Displays storage devices, disks, and partitions available to the system.
+
+ps
+
+Displays information about currently running processes.
+
+top
+
+Provides real-time information about CPU usage, memory usage, processes, and system load.
+
+Relationship Between Hardware and OS
+Hardware Resource	OS Abstraction
+CPU	Processes and threads
+RAM	Virtual memory
+Storage	Files and file systems
+Keyboard	Input devices
+Monitor	Output devices
+Network card	Network interface
+Other hardware	Device drivers
+
+The operating system acts as an interface between applications and physical hardware.
+
+Application
+     ↓
+System Call
+     ↓
+Operating System Kernel
+     ↓
+Device Driver
+     ↓
+Hardware
+
+Files
+practical1.c
