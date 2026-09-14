@@ -16,7 +16,7 @@ exit(0);
 }
 }
 wait(NULL);//taking the status of one child
-printf("Parent: any one child completes with wait()\n");//one parent prinitng its statues
+printf("Parent: any one child completes with wait()\n");//one parent prinitng its status
 waitpid(pid[2],NULL,0);//taking status of 3rd chils
 printf("Parent: Child 3 compelets with waitpid()\n");//one parent printing 3rd child status
 wait(NULL);
